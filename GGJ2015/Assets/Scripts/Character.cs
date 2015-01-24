@@ -7,6 +7,7 @@ public class Character : MonoBehaviour {
 	static float step;
 	public Rigidbody2D minionsPrefab;
 	public Transform minionsLaunch;
+<<<<<<< HEAD
 	public bool facingRight = false;
 
 	// Use this for initialization
