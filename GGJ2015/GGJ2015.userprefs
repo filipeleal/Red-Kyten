@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Activate.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Character.cs">
     <Files>
-      <File FileName="Assets\Scripts\Activate.cs" Line="5" Column="1" />
-      <File FileName="Assets\Scripts\Character.cs" Line="31" Column="1" />
+      <File FileName="Assets\Minionscript.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\Character.cs" Line="35" Column="40" />
+      <File FileName="Assets\Scripts\Activate.cs" Line="28" Column="21" />
+      <File FileName="Assets\MinionLaunch.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
