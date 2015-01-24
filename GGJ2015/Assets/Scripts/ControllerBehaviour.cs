@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ControllerBehaviour : MonoBehaviour {
 	float axis;
-    bool rightSide = true;
+    bool rightSide = false;
 
     bool onFloor = false;
     public Transform floorCheck;
@@ -17,9 +17,11 @@ public class ControllerBehaviour : MonoBehaviour {
     public bool jumpEnabled = true;
 	public float MaxVelocity = 10;
 
+    Animator animator;
+
 	// Use this for initialization
 	void Start () {
-	
+        animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -30,6 +32,8 @@ public class ControllerBehaviour : MonoBehaviour {
             {
                 rigidbody2D.AddForce(new Vector2(0, 700));
             }
+
+            animator.SetBool("IsJump", !onFloor);
         }
 	}
 
@@ -43,6 +47,10 @@ public class ControllerBehaviour : MonoBehaviour {
         else if (axis < 0 && rightSide)
             Flip();
 
+        if (axis != 0)
+            animator.SetInteger("Velocity", 1);
+        else
+            animator.SetInteger("Velocity", 0);
         velocity = new Vector2(axis * MaxVelocity, rigidbody2D.velocity.y);
         rigidbody2D.velocity = velocity;
 
@@ -52,6 +60,7 @@ public class ControllerBehaviour : MonoBehaviour {
             {
                 gameObject.GetComponent<SpringJoint2D>().connectedBody = null;
                 gameObject.GetComponent<SpringJoint2D>().enabled = false;
+                active = null;
             }
         }
 	}
