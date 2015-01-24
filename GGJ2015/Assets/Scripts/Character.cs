@@ -7,10 +7,13 @@ public class Character : MonoBehaviour {
 	static float step;
 	public Rigidbody2D minionsPrefab;
 	public Transform minionsLaunch;
-	bool facingRight = true;
+	public bool facingRight = false;
 	// Use this for initialization
-	void Start () {
 
+    Animator animator;
+
+	void Start () {
+        animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +22,11 @@ public class Character : MonoBehaviour {
 		//Debug.Log (move);
 		if (move != 0){
 			rigidbody2D.velocity = new Vector2 (move * speed, rigidbody2D.velocity.y);
+             animator.SetInteger("Velocity", 1);
 		}
+        else{
+            animator.SetInteger("Velocity", 0);
+        }
 
         var mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
