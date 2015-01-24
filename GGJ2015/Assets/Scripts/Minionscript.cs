@@ -11,12 +11,12 @@ public class MinionScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float step = speed * Time.deltaTime;
-		Vector2 place = new Vector2 ((GameObject.Find ("Player").transform.position.x - 2), gameObject.transform.position.y);
+		Vector2 place = new Vector2 ((GameObject.Find ("Player").transform.position.x - 2), (GameObject.Find ("Player").transform.position.y-1.4f));
 		if (Character.facingRight == true){
 			gameObject.transform.position = Vector2.MoveTowards (gameObject.transform.position, place, step );
 		}
 		else{
-			gameObject.transform.position = Vector2.MoveTowards (gameObject.transform.position, new Vector2((GameObject.Find ("Player").transform.position.x+2),gameObject.transform.position.y),step);
+			gameObject.transform.position = Vector2.MoveTowards (gameObject.transform.position, new Vector2((GameObject.Find ("Player").transform.position.x+2),(GameObject.Find ("Player").transform.position.y)-1.4f),step);
 
 		}
 	}
