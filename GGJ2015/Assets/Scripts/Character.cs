@@ -32,7 +32,15 @@ public class Character : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false) {
 			Rigidbody2D minion = Instantiate(minionsPrefab, minionsLaunch.position, minionsLaunch.rotation ) as Rigidbody2D;
 			Debug.Log (minionsLaunch.forward);
-			minion.rigidbody2D.AddForce(minionsLaunch.transform.forward * 5000f);
+            //minion.AddForce(Input.mousePosition.normalized * -5000f);
+
+            var mousePos =  Input.mousePosition;
+             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+             minion.transform.LookAt(mousePos);
+
+             minion.AddForce(minion.transform.forward * 5000f);
+
 		}
 	}
 	void Flip(){
