@@ -21,6 +21,7 @@ public class ControllerBehaviour : MonoBehaviour {
 
 	void FixedUpdate() {
         axis = Input.GetAxis("Horizontal");
+        Debug.Log(axis);
         if (axis > 0 && !rightSide)
             Flip();
         else if (axis < 0 && rightSide)
