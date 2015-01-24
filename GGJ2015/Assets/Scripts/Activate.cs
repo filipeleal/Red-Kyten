@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 
 public class Activate : MonoBehaviour {
-	Vector2 activeposition;
+	//Vector2 activeposition;
 
 
 	// Use this for initialization
@@ -16,9 +16,10 @@ public class Activate : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		activeposition = this.transform.position;
-		GameObject.Find ("Player").SendMessage("Grapple",this.gameObject );
-		Debug.Log ("sent");
+		//activeposition = this.transform.position;
+       // Debug.Log("sent");
+        GameObject.Find ("Player").SendMessage("Grapple",this.gameObject );
+		//Debug.Log ("sent");
 
 	}
 }
