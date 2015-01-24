@@ -14,7 +14,7 @@ public class buttons : MonoBehaviour {
 				gameObject.renderer.material.color = Color.green;
 		}
 		if (functioning == false){
-					gameObject.renderer.material.color = Color.red;
+				gameObject.renderer.material.color = Color.red;
 		}
 	}
 		void ButtonFunction(){
