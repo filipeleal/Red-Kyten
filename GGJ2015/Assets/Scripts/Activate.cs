@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class Activate : MonoBehaviour {
 	//Vector2 activeposition;
 	public static bool active = false;
+	public Rigidbody2D minionsPrefab;
+	public Transform minionsLaunch;
 
 	// Use this for initialization
 	void Start () {
@@ -31,8 +33,13 @@ public class Activate : MonoBehaviour {
 		Debug.Log(gameObject.GetComponent<SpringJoint2D> ().connectedBody);
 		float dist = Vector2.Distance (GameObject.Find ("Player").transform.position, this.transform.position);
 		if (dist <= 10f){
+//			Grapple();
 			gameObject.GetComponent<SpringJoint2D> ().connectedBody = GameObject.Find("Player").rigidbody2D;
 			yield return new WaitForSeconds(.5f);
 		}
 	}
+//	void Grapple(){
+//		Rigidbody2D minion = Instantiate(minionsPrefab, minionsLaunch.position, minionsLaunch.rotation ) as Rigidbody2D;
+
+//	}
 }
