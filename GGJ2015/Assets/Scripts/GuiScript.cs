@@ -26,7 +26,7 @@ public class GuiScript : MonoBehaviour {
 			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2+100, Screen.width/4, Screen.height/8) ,"Quit")){
 				Application.Quit();
 			}
-			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2, Screen.width/4, Screen.height/8) ,"Resume")){
+			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2-20, Screen.width/4, Screen.height/8) ,"Resume")){
 				guishow = false;
 			}
 		}
