@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MinionLaunchScript : MonoBehaviour {
-
+	public string effectedbutton;
 	// Use this for initialization
 	void Start () {
 
@@ -14,8 +14,8 @@ public class MinionLaunchScript : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D col){
 		Debug.Log (col.gameObject.name);
-		if (col.gameObject.name == "Button"){
-			GameObject.Find ("Button").SendMessage("ButtonFunction",SendMessageOptions.DontRequireReceiver);
+		if (col.gameObject.name == effectedbutton){
+			GameObject.Find (effectedbutton).SendMessage("ButtonFunction",SendMessageOptions.DontRequireReceiver);
 		}
 	}
 

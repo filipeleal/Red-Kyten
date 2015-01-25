@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class buttons : MonoBehaviour
 {
     public bool functioning = true;
+    public string effectedgate;
 
     Animator animator;
     // Use this for initialization
@@ -21,7 +23,7 @@ public class buttons : MonoBehaviour
         if (functioning == false)
         {
             //gameObject.renderer.material.color = Color.green;
-            GameObject.Find("Gate").SendMessage("OpenGate", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find(effectedgate).SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
         }
 
     }
@@ -31,3 +33,5 @@ public class buttons : MonoBehaviour
         Debug.Log(functioning);
     }
 }
+
+			

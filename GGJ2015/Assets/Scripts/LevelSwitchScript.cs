@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LevelSwitchScript : MonoBehaviour {
-
+	public int nextlevel;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,7 +14,7 @@ public class LevelSwitchScript : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.name == "Player"){
-			Application.LoadLevel(1);
+			Application.LoadLevel(nextlevel);
 		}
 	}
 

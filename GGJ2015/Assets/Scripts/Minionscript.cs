@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MinionScript : MonoBehaviour {
+public class Minionscript : MonoBehaviour {
 	public float speed=10;
 
     Animator animator;

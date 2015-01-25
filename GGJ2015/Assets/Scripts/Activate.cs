@@ -19,7 +19,7 @@ public class Activate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (gameObject.GetComponent<SpringJoint2D> ().connectedBody != null){
-            if ((player.transform.position.x >= (this.transform.position.x - .3) && player.transform.position.x <= (this.transform.position.x + .3)) | player.transform.position.y >= (this.transform.position.y - 3))
+            if (((player.transform.position.x >= (this.transform.position.x - .3) && player.transform.position.x <= (this.transform.position.x + .3))) | (player.transform.position.y >= (this.transform.position.y - 3)))
             {
 				gameObject.GetComponent<SpringJoint2D> ().connectedBody = null;
                 player.GetComponent<Animator>().SetBool("IsJump", false);
