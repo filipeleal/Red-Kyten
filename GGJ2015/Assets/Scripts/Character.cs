@@ -12,7 +12,7 @@ public class Character : MonoBehaviour {
     public static bool noControl = false;
 
     public float move;
-
+	public static int lives = 3;
     public bool isDead ;
 
   
@@ -67,10 +67,16 @@ public class Character : MonoBehaviour {
 	}
 	void Update () {
        
-        if(isDead)
+		if(isDead){
+			lives -= 1;
+			if (lives == 0) {
+				Application.LoadLevel(3);		
+			}
             Application.LoadLevel(Application.loadedLevel);
 
-        if (noControl)
+		}
+
+		if (noControl)
             return;
         if (Input.GetKeyDown(KeyCode.K))
         {
