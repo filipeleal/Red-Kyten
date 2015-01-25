@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Character : MonoBehaviour {
 	public float speed;
+	static int lives;
 	static float step;
 	public Rigidbody2D minionsPrefab;
 	public Transform minionsLaunch;
@@ -91,6 +92,7 @@ public class Character : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 	void Death(){
+		lives -= 1;
 		Application.LoadLevel(Application.loadedLevel);
 
 		//Destroy (gameObject);
