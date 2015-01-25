@@ -13,6 +13,10 @@ public class Character : MonoBehaviour {
 
     public float move;
 
+    public bool isDead ;
+
+  
+
 	// Use this for initialization
     
 
@@ -23,6 +27,8 @@ public class Character : MonoBehaviour {
 
 	void Start () {
 		facingRight = false;
+        isDead = false;
+        noControl = false;
         animator = gameObject.GetComponent<Animator>();
 	}
 	
@@ -60,13 +66,19 @@ public class Character : MonoBehaviour {
 		}
 	}
 	void Update () {
+       
+        if(isDead)
+            Application.LoadLevel(Application.loadedLevel);
+
         if (noControl)
             return;
         if (Input.GetKeyDown(KeyCode.K))
         {
-            animator.SetBool("Die", true);
-                
+           
+            Death();
+               
         }
+       
         if (Input.GetKeyDown (KeyCode.Mouse0) )
         Debug.Log(Activate.active);
 		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false && GuiScript.guishow == false) {
@@ -91,7 +103,11 @@ public class Character : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 	void Death(){
-		Application.LoadLevel(Application.loadedLevel);
+        isDead=false;
+        noControl = true;
+        
+        animator.SetBool("Die", true);
+		//Application.LoadLevel(Application.loadedLevel);
 
 		//Destroy (gameObject);
 	}
