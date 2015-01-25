@@ -29,9 +29,17 @@ public class Character : MonoBehaviour {
 		if (move != 0){
 			rigidbody2D.velocity = new Vector2 (move * speed, rigidbody2D.velocity.y);
              animator.SetInteger("Velocity", 1);
+             var audio = GetComponent<AudioSource> ();
+
+                if(!audio.isPlaying){
+
+                               audio.Play ();
+
+                } 
 		}
         else{
             animator.SetInteger("Velocity", 0);
+            audio.Stop();
         }
 
         var mousePos = Input.mousePosition;
