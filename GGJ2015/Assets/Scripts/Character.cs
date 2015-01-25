@@ -45,7 +45,7 @@ public class Character : MonoBehaviour {
 
                 if(!audio.isPlaying){
 
-                               audio.Play ();
+                               //audio.Play ();
 
                 } 
 		}
@@ -69,11 +69,14 @@ public class Character : MonoBehaviour {
        
 		if(isDead){
 			lives -= 1;
-			if (lives == 0) {
-				Application.LoadLevel(3);		
-			}
-            Application.LoadLevel(Application.loadedLevel);
-
+            if (lives == 0)
+            {
+                Application.LoadLevel(5);
+            }
+            else
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
 		}
 
 		if (noControl)

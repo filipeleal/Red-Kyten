@@ -12,5 +12,9 @@ public class QuitOnClick : MonoBehaviour {
 	void Update () {
         if (Input.GetKey("escape"))
             Application.Quit();
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Application.LoadLevel(4);
+        }
 	}
 }
