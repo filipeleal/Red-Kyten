@@ -43,6 +43,13 @@ public class Character : MonoBehaviour {
 	}
 	void Update () {
 
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            animator.SetBool("Die", true);
+            
+                
+        }
+
 		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false && GuiScript.guishow == false) {
 			
 			
