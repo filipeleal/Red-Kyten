@@ -9,6 +9,7 @@ public class Mouse : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Screen.showCursor = false;
+        Activate.active = false;
 	}
 	
 	// Update is called once per frame

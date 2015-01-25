@@ -23,6 +23,7 @@ public class Activate : MonoBehaviour {
             {
 				gameObject.GetComponent<SpringJoint2D> ().connectedBody = null;
                 player.GetComponent<Animator>().SetBool("IsJump", false);
+                player.GetComponent<Character>().isJump = false;
 			}
 		}
 	}
@@ -42,6 +43,7 @@ public class Activate : MonoBehaviour {
 //			Grapple();
             player.GetComponent<Animator>().SetBool("IsJump", true);
             gameObject.GetComponent<SpringJoint2D>().connectedBody = player.rigidbody2D;
+            player.GetComponent<Character>().isJump = true;
 			yield return new WaitForSeconds(.5f);
 		}
 	}

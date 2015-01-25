@@ -13,8 +13,8 @@ public class LevelSwitchScript : MonoBehaviour {
 	
 	}
 	void OnCollisionEnter2D(Collision2D col){
-		if (col.gameObject.name == "Player"){
-			Application.LoadLevel(nextlevel);
+		if (col.gameObject.GetComponent<Character>() != null){
+			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 	}
 

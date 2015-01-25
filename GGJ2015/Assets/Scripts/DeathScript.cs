@@ -14,8 +14,8 @@ public class DeathScript : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D col){
 		Debug.Log (col.gameObject.name);
-		if (col.gameObject.name == "Player"){
-			GameObject.Find ("Player").SendMessage("Death",SendMessageOptions.DontRequireReceiver);
+		if (col.gameObject.GetComponent<Character>() != null){
+            col.gameObject.SendMessage("Death", SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }
