@@ -1,10 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Character.cs">
     <Files>
-      <File FileName="Assets\Scripts\Character.cs" Line="102" Column="1" />
+      <File FileName="Assets\Scripts\DeathScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character.cs" Line="74" Column="5" />
       <File FileName="Assets\Scripts\Gate.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons.cs" Line="12" Column="17" />
+      <File FileName="Assets\Scripts\buttons.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\Assets\Ferr\2D\Scripts\Ferr2D_DynamicMesh.cs" Line="155" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
