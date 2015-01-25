@@ -118,7 +118,7 @@ public class Intro : MonoBehaviour
 
     void Step6()
     {
-        Application.LoadLevel("Level1");
+        Application.LoadLevel(Application.loadedLevel + 1);
     }
 
     IEnumerator Wait(float seconds)
