@@ -23,7 +23,12 @@ public class Intro : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update(){
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Step6();	
+		}
+	}
+	void FixedUpdate()
     {
         switch (step)
         {
@@ -120,6 +125,7 @@ public class Intro : MonoBehaviour
     {
         Application.LoadLevel(Application.loadedLevel + 1);
     }
+
 
     IEnumerator Wait(float seconds)
     {
