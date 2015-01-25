@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\ControllerBehaviour.cs" />
      <Compile Include="Assets\Scripts\DeathScript.cs" />
      <Compile Include="Assets\Scripts\Gate.cs" />
+     <Compile Include="Assets\Scripts\GuiScript.cs" />
      <Compile Include="Assets\Scripts\LevelSwitchScript.cs" />
      <Compile Include="Assets\Scripts\MinionLaunchScript.cs" />
      <Compile Include="Assets\Scripts\MinionScript.cs" />
