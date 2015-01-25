@@ -51,7 +51,7 @@ public class Intro : MonoBehaviour
     void Step1()
     {
         Vector3 destination = new Vector3(move1.position.x, move1.position.y, Camera.main.transform.position.z);
-        Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, destination, 1 * Time.deltaTime);
+        Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, destination, 2 * Time.deltaTime);
         if (Camera.main.transform.position.x == destination.x)
         {
             step = 2;
@@ -65,7 +65,7 @@ public class Intro : MonoBehaviour
             CameraClose.gameObject.SetActive(true);
             Camera.main.gameObject.SetActive(false);
 
-            StartCoroutine("Wait", 3f);
+            StartCoroutine("Wait", 2f);
         }
         
         
@@ -78,7 +78,7 @@ public class Intro : MonoBehaviour
         {
             CameraClose2.gameObject.SetActive(true);
             CameraClose.gameObject.SetActive(false);
-            StartCoroutine("Wait", 3f);
+            StartCoroutine("Wait", 2f);
         }
 
         
@@ -91,7 +91,7 @@ public class Intro : MonoBehaviour
         {
             CameraClose3.gameObject.SetActive(true);
             CameraClose2.gameObject.SetActive(false);
-            StartCoroutine("Wait", 3f);
+            StartCoroutine("Wait", 2f);
         }
 
       
@@ -109,7 +109,7 @@ public class Intro : MonoBehaviour
 
             glow.Play();
 
-            StartCoroutine("Wait", 7f);
+            StartCoroutine("Wait", 4f);
         }
 
        
