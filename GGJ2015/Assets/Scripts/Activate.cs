@@ -9,14 +9,18 @@ public class Activate : MonoBehaviour {
 	public Rigidbody2D minionsPrefab;
 	public Transform minionsLaunch;
 
+    GameObject player;
+
 	// Use this for initialization
 	void Start () {
+        player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (gameObject.GetComponent<SpringJoint2D> ().connectedBody != null){
-			if ((GameObject.Find("Player").transform.position.x >= (this.transform.position.x-.3) && GameObject.Find("Player").transform.position.x <= (this.transform.position.x+.3)) | GameObject.Find("Player").transform.position.y >= (this.transform.position.y-3)){
+            if ((player.transform.position.x >= (this.transform.position.x - .3) && player.transform.position.x <= (this.transform.position.x + .3)) | player.transform.position.y >= (this.transform.position.y - 3))
+            {
 				gameObject.GetComponent<SpringJoint2D> ().connectedBody = null;	
 			}
 		}
@@ -30,11 +34,12 @@ public class Activate : MonoBehaviour {
 		Debug.Log (false);
 	}
 	IEnumerator OnMouseDown(){
-		Debug.Log(gameObject.GetComponent<SpringJoint2D> ().connectedBody);
-		float dist = Vector2.Distance (GameObject.Find ("Player").transform.position, this.transform.position);
+        Debug.Log(player.rigidbody2D);
+       
+        float dist = Vector2.Distance(player.transform.position, this.transform.position);
 		if (dist <= 10f){
 //			Grapple();
-			gameObject.GetComponent<SpringJoint2D> ().connectedBody = GameObject.Find("Player").rigidbody2D;
+            gameObject.GetComponent<SpringJoint2D>().connectedBody = player.rigidbody2D;
 			yield return new WaitForSeconds(.5f);
 		}
 	}
