@@ -62,5 +62,10 @@ public class Character : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+	void Death(){
+		Application.LoadLevel(Application.loadedLevel);
+
+		//Destroy (gameObject);
+	}
 
 }
