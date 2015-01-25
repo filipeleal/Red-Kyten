@@ -7,9 +7,11 @@ public class Character : MonoBehaviour {
 	static float step;
 	public Rigidbody2D minionsPrefab;
 	public Transform minionsLaunch;
-	public static bool facingRight = false;
-	// Use this for initialization
 
+	public static bool facingRight = false;
+
+	// Use this for initialization
+    
     Animator animator;
 
 	void Start () {
@@ -50,7 +52,7 @@ public class Character : MonoBehaviour {
             Rigidbody2D minion = Instantiate(minionsPrefab, minionsLaunch.position, minionsLaunch.rotation) as Rigidbody2D;
 
             minion.transform.LookAt(mousePos);
-            minion.AddForce(minion.transform.forward * 5000f);
+            minion.AddForce(minion.transform.forward * 1500f);
 
 		}
 	}
