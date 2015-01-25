@@ -3,6 +3,7 @@ using System.Collections;
 
 public class buttons : MonoBehaviour {
 	public bool functioning = false;
+	public string effectedgate;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,7 +13,7 @@ public class buttons : MonoBehaviour {
 	void Update () {
 		if (functioning == true){
 			gameObject.renderer.material.color = Color.green;
-			GameObject.Find("Gate").SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
+			GameObject.Find(effectedgate).SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
 		}
 		if (functioning == false){
 			gameObject.renderer.material.color = Color.red;
