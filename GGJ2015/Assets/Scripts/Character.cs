@@ -22,7 +22,7 @@ public class Character : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
-        facingRight = false; 
+        facingRight = false;
         isJump = false;
     }
 
@@ -37,6 +37,15 @@ public class Character : MonoBehaviour
         {
             rigidbody2D.velocity = new Vector2(move * speed, rigidbody2D.velocity.y);
             animator.SetInteger("Velocity", 1);
+        }
+        else
+        {
+            animator.SetInteger("Velocity", 0);
+            
+        }
+
+        if (move != 0 && !isJump)
+        {
             var audio = GetComponent<AudioSource>();
 
             if (!audio.isPlaying)
@@ -46,7 +55,7 @@ public class Character : MonoBehaviour
         }
         else
         {
-            animator.SetInteger("Velocity", 0);
+
             audio.Stop();
         }
 
