@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 7c220e33eaf629748ad3bf9c1e3dcd1a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: botz-life_0
+    21300002: botz-life_1
+    21300004: botz-life_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,23 +28,53 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: botz-life_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 77
+        width: 180
+        height: 360
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: botz-life_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 78
+        width: 179
+        height: 358
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: botz-life_2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 81
+        width: 180
+        height: 359
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

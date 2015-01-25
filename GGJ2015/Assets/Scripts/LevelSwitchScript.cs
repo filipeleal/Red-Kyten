@@ -25,6 +25,6 @@ public class LevelSwitchScript : MonoBehaviour {
 
     public void LoadCredits()
     {
-        Application.LoadLevel(4);
+        Application.LoadLevel(5);
     }
 }

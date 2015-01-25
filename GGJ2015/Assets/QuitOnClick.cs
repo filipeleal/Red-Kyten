@@ -14,7 +14,7 @@ public class QuitOnClick : MonoBehaviour {
             Application.Quit();
         if (Input.GetKey(KeyCode.Space))
         {
-            Application.LoadLevel(4);
+            Application.LoadLevel(5);
         }
 	}
 }

@@ -71,7 +71,7 @@ public class Character : MonoBehaviour {
 			lives -= 1;
             if (lives == 0)
             {
-                Application.LoadLevel(5);
+                Application.LoadLevel(6);
             }
             else
             {
