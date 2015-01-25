@@ -52,7 +52,7 @@ public class Character : MonoBehaviour {
             Rigidbody2D minion = Instantiate(minionsPrefab, minionsLaunch.position, minionsLaunch.rotation) as Rigidbody2D;
 
             minion.transform.LookAt(mousePos);
-            minion.AddForce(minion.transform.forward * 1500f);
+            minion.AddForce(minion.transform.forward * 2000f);
 
 		}
 	}

@@ -11,10 +11,11 @@ public class buttons : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (functioning == true){
-				gameObject.renderer.material.color = Color.green;
+			gameObject.renderer.material.color = Color.green;
+			GameObject.Find("Gate").SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
 		}
 		if (functioning == false){
-				gameObject.renderer.material.color = Color.red;
+			gameObject.renderer.material.color = Color.red;
 		}
 	}
 		void ButtonFunction(){
