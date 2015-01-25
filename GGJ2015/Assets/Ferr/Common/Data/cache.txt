@@ -11,6 +11,8 @@ Assets/Ferr/2DTerrain/Examples/Assets/GooPlayer.prefab
 Assets/Ferr/2DTerrain/Examples/Assets/FerrlibLogoSmall.prefab
 Assets/Ferr/2DTerrain/Examples/Assets/Tumbleweed.prefab
 Assets/Images/Ferr 2D/lab.prefab
+Assets/Prefabs/Button.prefab
+Assets/Prefabs/Activator.prefab
 
 [Ferr2DT_PathTerrain]
 Assets/Ferr/2DTerrain/TerrainMaterials/ForestTerrainMaterial.prefab
@@ -24,3 +26,5 @@ Assets/Ferr/2DTerrain/Examples/Assets/FerrlibLogoSmall.prefab
 Assets/Ferr/2DTerrain/Examples/Assets/Tumbleweed.prefab
 Assets/Ferr/2DTerrain/TerrainMaterials/SandTerrainMaterial.prefab
 Assets/Images/Ferr 2D/lab.prefab
+Assets/Prefabs/Button.prefab
+Assets/Prefabs/Activator.prefab
