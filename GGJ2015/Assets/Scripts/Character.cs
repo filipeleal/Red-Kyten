@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     public float move;
 
     public bool isJump;
-    // Use this for initialization
+    // Use this for initialization 
 
     Animator animator;
 
