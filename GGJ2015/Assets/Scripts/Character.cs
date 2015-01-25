@@ -10,6 +10,7 @@ public class Character : MonoBehaviour {
 
 	public static bool facingRight = false;
 
+    public float move;
 	// Use this for initialization
     
     Animator animator;
@@ -20,7 +21,7 @@ public class Character : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate(){
-		float move = Input.GetAxis ("Horizontal");
+		move = Input.GetAxis ("Horizontal");
 		//Debug.Log (move);
 		if (move != 0){
 			rigidbody2D.velocity = new Vector2 (move * speed, rigidbody2D.velocity.y);
