@@ -18,4 +18,9 @@ public class LevelSwitchScript : MonoBehaviour {
 		}
 	}
 
+	public void LoadFirstLevel ()
+	{
+		Application.LoadLevel(1);
+	}
+
 }
