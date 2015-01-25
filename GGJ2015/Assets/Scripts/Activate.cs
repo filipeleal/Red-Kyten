@@ -21,24 +21,26 @@ public class Activate : MonoBehaviour {
 		if (gameObject.GetComponent<SpringJoint2D> ().connectedBody != null){
             if ((player.transform.position.x >= (this.transform.position.x - .3) && player.transform.position.x <= (this.transform.position.x + .3)) | player.transform.position.y >= (this.transform.position.y - 3))
             {
-				gameObject.GetComponent<SpringJoint2D> ().connectedBody = null;	
+				gameObject.GetComponent<SpringJoint2D> ().connectedBody = null;
+                player.GetComponent<Animator>().SetBool("IsJump", false);
 			}
 		}
 	}
 	void OnMouseEnter(){
 		active = true;
-		Debug.Log (true);
+		//Debug.Log (true);
 		}
 	void OnMouseExit(){
 		active = false;
-		Debug.Log (false);
+		//Debug.Log (false);
 	}
 	IEnumerator OnMouseDown(){
-        Debug.Log(player.rigidbody2D);
+       // Debug.Log(player.rigidbody2D);
        
         float dist = Vector2.Distance(player.transform.position, this.transform.position);
 		if (dist <= 10f){
 //			Grapple();
+            player.GetComponent<Animator>().SetBool("IsJump", true);
             gameObject.GetComponent<SpringJoint2D>().connectedBody = player.rigidbody2D;
 			yield return new WaitForSeconds(.5f);
 		}

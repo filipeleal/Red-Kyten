@@ -46,13 +46,11 @@ public class Character : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.K))
         {
             animator.SetBool("Die", true);
-            
                 
         }
-
+        if (Input.GetKeyDown (KeyCode.Mouse0) )
+        Debug.Log(Activate.active);
 		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false && GuiScript.guishow == false) {
-			
-			
             var mousePos =  Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
             
@@ -60,8 +58,12 @@ public class Character : MonoBehaviour {
 
             minion.transform.LookAt(mousePos);
             minion.AddForce(minion.transform.forward * 2000f);
-
+            animator.SetBool("Firing", true);
 		}
+        else
+        {
+            animator.SetBool("Firing", false);
+        }
 	}
 	void Flip(){
 		facingRight = !facingRight;
