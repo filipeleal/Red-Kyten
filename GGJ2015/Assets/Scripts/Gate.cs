@@ -1,29 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Gate : MonoBehaviour {
-	public float speed=1;
-	public float step;
-	Vector2 sleepposition;
-	// Use this for initialization
-	void Start () {
-		sleepposition = this.transform.position;
+public class Gate : MonoBehaviour
+{
+    public float speed = 1;
+    public float step;
+    Vector2 sleepposition;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		step = speed * Time.deltaTime;
+    SpriteRenderer spriteRenderer;
+    BoxCollider2D boxCollider;
 
-	}
-	void OpenGate(){
-		Vector2 newposition = this.transform.position;
-		newposition = new Vector2 (newposition.x, sleepposition.y+5);
-		this.transform.localPosition = Vector2.MoveTowards(this.transform.position,newposition,step);
-	}	
-	void CloseGate(){
-		Vector2 newposition = this.transform.position;
-		newposition = new Vector2 (newposition.x, sleepposition.y);
-		this.transform.localPosition = Vector2.MoveTowards(this.transform.position,newposition,step);
-	}
+    public Sprite GateOpen;
+    public Sprite GateClosed;
+    // Use this for initialization
+    void Start()
+    {
+        sleepposition = this.transform.position;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        boxCollider = gameObject.GetComponent<BoxCollider2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        step = speed * Time.deltaTime;
+
+    }
+    void OpenGate()
+    {
+        spriteRenderer.sprite = GateOpen;
+        //Vector2 newposition = this.transform.position;
+        //newposition = new Vector2 (newposition.x, sleepposition.y+5);
+        //this.transform.localPosition = Vector2.MoveTowards(this.transform.position,newposition,step);
+
+        boxCollider.enabled = false;
+    }
+    void CloseGate()
+    {
+        spriteRenderer.sprite = GateClosed;
+        //Vector2 newposition = this.transform.position;
+        //newposition = new Vector2 (newposition.x, sleepposition.y);
+        //this.transform.localPosition = Vector2.MoveTowards(this.transform.position,newposition,step);
+        boxCollider.enabled = true;
+    }
 }
