@@ -12,18 +12,44 @@ Platform assembly: C:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\play_Data\Managed\A
 Loading C:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\play_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\play_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\play_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.248 seconds
+- Completed reload, in  0.039 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Daniel\Desktop\Red-Kyten\GGJ2015\play_Data\Managed\System.Core.dll (this message is harmless)
-Player
+Floor
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.367591 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Floor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 233.
-Total: 0.501779 ms (FindLiveObjects: 0.011404 ms CreateObjectMapping: 0.007982 ms MarkObjects: 0.107958 ms  DeleteObjects: 0.009123 ms)
+minionsPrefab(Clone)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+DeathFloor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+minionsPrefab(Clone)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+DeathFloor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Floor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Floor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Floor
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 

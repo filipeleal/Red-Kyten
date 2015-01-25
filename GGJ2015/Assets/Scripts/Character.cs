@@ -43,7 +43,7 @@ public class Character : MonoBehaviour {
 	}
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false) {
+		if (Input.GetKeyDown (KeyCode.Mouse0) && Activate.active == false && GuiScript.guishow == false) {
 			
 			
             var mousePos =  Input.mousePosition;
