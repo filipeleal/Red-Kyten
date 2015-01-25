@@ -25,6 +25,10 @@ public class buttons : MonoBehaviour
             //gameObject.renderer.material.color = Color.green;
             GameObject.Find(effectedgate).SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
         }
+		else{
+			GameObject.Find(effectedgate).SendMessage("CloseGate",SendMessageOptions.DontRequireReceiver);
+
+		}
 
     }
     void ButtonFunction()
