@@ -16,6 +16,7 @@ Assets/Prefabs/Activator.prefab
 Assets/Prefabs/Player.prefab
 Assets/Prefabs/Player Glowing.prefab
 Assets/Prefabs/Gate.prefab
+Assets/Prefabs/Tesla.prefab
 
 [Ferr2DT_PathTerrain]
 Assets/Ferr/2DTerrain/TerrainMaterials/ForestTerrainMaterial.prefab
@@ -34,3 +35,4 @@ Assets/Prefabs/Activator.prefab
 Assets/Prefabs/Player.prefab
 Assets/Prefabs/Player Glowing.prefab
 Assets/Prefabs/Gate.prefab
+Assets/Prefabs/Tesla.prefab
