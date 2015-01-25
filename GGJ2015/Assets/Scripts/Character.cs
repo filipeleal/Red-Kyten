@@ -12,8 +12,13 @@ public class Character : MonoBehaviour {
     public static bool noControl = false;
 
     public float move;
+
 	// Use this for initialization
     
+
+
+    public bool isJump;
+    // Use this for initialization 
     Animator animator;
 
 	void Start () {
