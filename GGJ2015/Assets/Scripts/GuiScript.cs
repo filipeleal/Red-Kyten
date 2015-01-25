@@ -23,10 +23,10 @@ public class GuiScript : MonoBehaviour {
 	void OnGUI(){
 		if (guishow == true){
 			GUI.DrawTexture(new Rect((Screen.width/3),(Screen.height/6),Screen.width/3,(Screen.height/3)*2.2f),guimenu);
-			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2+100, Screen.width/4, Screen.height/8) ,"Quit")){
+			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2+120, Screen.width/4, Screen.height/8) ,"Quit")){
 				Application.Quit();
 			}
-			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2-20, Screen.width/4, Screen.height/8) ,"Resume")){
+			if (GUI.Button(new Rect (Screen.width/3+50, Screen.height/2, Screen.width/4, Screen.height/8) ,"Resume")){
 				guishow = false;
 			}
 		}
