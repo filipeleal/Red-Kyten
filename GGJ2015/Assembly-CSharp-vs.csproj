@@ -46,6 +46,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_Animator.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_DynamicMesh.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_IPath.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_Path.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_Sprite.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\Ferr2D_Triangulator.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\Dict.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\Geom.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\Mesh.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\MeshUtils.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\PriorityHeap.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\PriorityQueue.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\Sweep.cs" />
+     <Compile Include="Assets\Ferr\2D\Scripts\LibTessDotNet\Tess.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\AutoBoxCollider.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\BlobShadow.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\CameraMove.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\InfiniteTerrain.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\InfiniteTerrainCamera.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\ProceduralInsert.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\Toss.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\TumbleweedMotion.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Examples\Assets\TumbleweedSpawner.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Scripts\Ferr2DT_PathTerrain.cs" />
+     <Compile Include="Assets\Ferr\2DTerrain\Scripts\Ferr2DT_TerrainMaterial.cs" />
+     <Compile Include="Assets\Ferr\Common\Scripts\Ferr_Color.cs" />
+     <Compile Include="Assets\Ferr\Common\Scripts\Ferr_JSON.cs" />
+     <Compile Include="Assets\Ferr\Common\Scripts\Ferr_LambdaComparer.cs" />
+     <Compile Include="Assets\Ferr\Common\Scripts\Ferr_LogoLock.cs" />
      <Compile Include="Assets\Intro.cs" />
      <Compile Include="Assets\Scripts\Activate.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
@@ -59,6 +88,19 @@
      <Compile Include="Assets\Scripts\Minionscript.cs" />
      <Compile Include="Assets\Scripts\Mouse.cs" />
      <Compile Include="Assets\Scripts\buttons.cs" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\UnlitColoredTint.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\UnitColoredTransparent.shader" />
+     <None Include="Assets\Ferr\Docs\Ferr2DTerrainTool - Readme.txt" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\LitColored.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\UnlitColored.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\LitCommon.cginc" />
+     <None Include="Assets\Ferr\Common\Data\cache.txt" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\UnlitColoredTintTransparent.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\LightmapColoredTransparent.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\UnlitWavyTransparent.shader" />
+     <None Include="Assets\Ferr\2D\Scripts\LibTessDotNet\LibTessDotNet-LICENSE.txt" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\LightmapColored.shader" />
+     <None Include="Assets\Ferr\2DTerrain\Shaders\LitColoredTransparent.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
