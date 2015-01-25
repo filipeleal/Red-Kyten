@@ -20,11 +20,15 @@ public class buttons : MonoBehaviour
 
         animator.SetBool("ON", functioning);
 
-        if (functioning == false)
+        if (functioning == true)
         {
             //gameObject.renderer.material.color = Color.green;
             GameObject.Find(effectedgate).SendMessage("OpenGate",SendMessageOptions.DontRequireReceiver);
         }
+		else{
+			GameObject.Find(effectedgate).SendMessage("CloseGate",SendMessageOptions.DontRequireReceiver);
+
+		}
 
     }
     void ButtonFunction()
