@@ -76,6 +76,7 @@
      <Compile Include="Assets\Ferr\Common\Scripts\Ferr_LambdaComparer.cs" />
      <Compile Include="Assets\Ferr\Common\Scripts\Ferr_LogoLock.cs" />
      <Compile Include="Assets\Intro.cs" />
+     <Compile Include="Assets\QuitOnClick.cs" />
      <Compile Include="Assets\Scripts\Activate.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
