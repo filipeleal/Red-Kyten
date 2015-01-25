@@ -35,10 +35,10 @@ public class Activate : MonoBehaviour {
 		//Debug.Log (false);
 	}
 	IEnumerator OnMouseDown(){
-       // Debug.Log(player.rigidbody2D);
+        Debug.Log(player.rigidbody2D);
        
         float dist = Vector2.Distance(player.transform.position, this.transform.position);
-		if (dist <= 10f){
+		if (dist <= 15f){
 //			Grapple();
             player.GetComponent<Animator>().SetBool("IsJump", true);
             gameObject.GetComponent<SpringJoint2D>().connectedBody = player.rigidbody2D;

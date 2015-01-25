@@ -9,6 +9,7 @@ public class Character : MonoBehaviour {
 	public Transform minionsLaunch;
 
 	public static bool facingRight = false;
+    public static bool noControl = false;
 
     public float move;
 	// Use this for initialization
@@ -21,6 +22,8 @@ public class Character : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate(){
+        if (noControl)
+            return;
 		move = Input.GetAxis ("Horizontal");
 		//Debug.Log (move);
 		if (move != 0){
@@ -43,7 +46,8 @@ public class Character : MonoBehaviour {
 		}
 	}
 	void Update () {
-
+        if (noControl)
+            return;
         if (Input.GetKeyDown(KeyCode.K))
         {
             animator.SetBool("Die", true);
